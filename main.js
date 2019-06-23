@@ -15,14 +15,22 @@
       }
     }
 
+    const btns = document.querySelectorAll('.btn');
+    const screen = document.querySelector('.screen');
+    
+    for (let i = 0; i < btns.length; i++){
+    btns[i].addEventListener('click', function (){
+    let number = btns[i].getAttribute('data-num');
+    screen.value = number;
+    })
+    }
+    
+    const clearBtn = document.querySelector('.clear')
     function myFunction(){
-      var select = prompt ('Do you want to select the room');
-if(select === ''){
-  alert('please select a service')
-  var select = prompt ('Do you want to select the room');
-}else if (select === '') {
-  alert('please re start your request for the service')
-  confirm('councel')
-}
-  alert ('Congratulation you selected your service');
-  }
+      screen.value = '';
+      if(screen.value === ''){
+        alert('please the select input has to be filled')
+      }else{
+        alert('Dear customer are you sure you want to delet the item you selected?')
+      }
+    }

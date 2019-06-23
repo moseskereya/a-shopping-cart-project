@@ -148,30 +148,39 @@ body{
     color: #f1f1f1;
 }
 .cart{
-  line-height: 70px;
+  line-height:0px;
 }
 .cart{
   position: relative;
   right: 0px;
 }
 .div{
-  height: 38%;
+  height: 100%;
   width: 0;
-  position: fixed;
+  position:fixed;
   z-index: 1;
   right: 0;
   top: 200px;
-  background-color: rgb(190, 106, 37); 
+ display: block;
+ justify-content: center;
+  background-color: rgb(209, 103, 16); 
   background-color: 44, 62, 80;
   overflow-x: hidden; 
   transition: 0.9s all ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .cart .fas{
   font-size: 25px;
   color: orange;
+}
+.div input{
+  margin: 30px;
+  padding: 20px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.clear{
+ padding: 10px 20px;
+ margin: 0 30px;
 }
 .overplay{
   padding: 10px 20px;
